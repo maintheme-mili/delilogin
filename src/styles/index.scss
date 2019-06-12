@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  background-color: #f6f6f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+#app {
+  height: 100%;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both
+  }
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+.mb60 {
+  margin-bottom: 60px;
+}
