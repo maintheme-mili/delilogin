@@ -2,10 +2,10 @@ import axios from 'axios'
 
 // 封装request
 
-function request ({ methods, url, data = {}, header = {}, isAuth = true }) {
+function request ({ method, url, data = {}, header = {}, isAuth = true }) {
   return new Promise((resolve, reject) => {
     let options = {
-      methods: methods,
+      method: method,
       url: url,
       headers: {
         client_id: 'eplus_web',
@@ -24,7 +24,7 @@ function request ({ methods, url, data = {}, header = {}, isAuth = true }) {
 
 export function post (url, data, header, isAuth) {
   return request({
-    methods: 'post',
+    method: 'post',
     url,
     data,
     header,

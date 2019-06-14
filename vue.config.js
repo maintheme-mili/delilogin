@@ -9,13 +9,6 @@ module.exports = {
     port: 8090,
     // host: '192.168.0.125',
     proxy: {
-      '/test': {
-        target: 'http://192.168.0.204:9101',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/test': ''
-        }
-      },
       '/gateway': {
         target: 'http://192.168.0.204:9002/api',
         changeOrigin: true,
